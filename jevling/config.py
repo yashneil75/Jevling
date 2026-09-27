@@ -1,0 +1,4 @@
+MODEL_REPO = "openbmb/MiniCPM5-2B-GGUF"
+MODEL_FILE = "MiniCPM5-2B-Q4_K_M.gguf"
+HOST = "0.0.0.0"
+PORT = 8000
