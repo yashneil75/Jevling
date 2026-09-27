@@ -47,6 +47,26 @@ Model settings are in `jevling/config.py`:
 - `MODEL_FILE` — GGUF filename glob
 - `n_gpu_layers=-1` — set to `0` for CPU-only inference
 
+### Changing the Model
+
+You can switch models in two ways:
+
+**Environment variables** (no code changes needed):
+
+```bash
+export JEVLING_MODEL_REPO="your-org/your-model-gguf"
+export JEVLING_MODEL_FILE="your-model-Q4_K_M.gguf"
+```
+
+**Constructor parameters** (per-instance override):
+
+```python
+client = JevlingClient(
+    repo_id="your-org/your-model-gguf",
+    filename="your-model-Q4_K_M.gguf",
+)
+```
+
 ## License
 
 MIT — Copyright (c) 2026 Yashneil Gajjala — see [LICENSE](LICENSE).
