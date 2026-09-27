@@ -49,4 +49,4 @@ Model settings are in `jevling/config.py`:
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — Copyright (c) 2026 Yashneil Gajjala — see [LICENSE](LICENSE).
